@@ -292,3 +292,31 @@ span {
   border-radius: 50%;
   background-color: transparent;
 }
+
+@media screen and (max-width: 1020px) {
+  @media (prefers-reduced-motion: no-preference) { 
+      :root {
+      scroll-behavior: smooth;
+  }}
+
+  .slider-content {
+    gap: 0.2vw;
+  }
+
+  .controls {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .slider-text-wrapper {
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Inter';
+  }
+
+  .slider-circle-bug, .slider-circle-real-life, .slider-circle-step, .slider-circle-users {
+    width: 2vw;
+    height: 2vw;
+   }
+
+}
