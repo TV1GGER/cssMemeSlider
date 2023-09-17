@@ -188,3 +188,107 @@ span {
   opacity: 0;
   visibility: hidden;
  }
+ 
+ .slide-bug-input:checked + .bug-block {
+  height: 100%;
+  opacity: 1;
+  z-index: 100;
+  transition: .4s;
+ }
+
+ .slide-bug-input:checked ~ * .slider-text-bug {
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: .85s;
+ }
+
+ .slide-bug-input:checked ~ * .slider-circle-bug {
+  border: 0.1vw solid #7faae8;
+  border-radius: 50%;
+  background-color: #25282a;
+}
+
+.slide-bug-input:checked ~ * .slider-circle-bug:hover {
+  border: 0.1vw solid #ffffff;
+  border-radius: 50%;
+  background-color: #25282a;
+}
+
+#slide-real-life:checked + .real-life-block {
+  height: 100%;
+  opacity: 1;
+  z-index: 100;
+  transition: .4s;
+ }
+
+ #slide-real-life:checked ~ * .slider-text-real-life {
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: .85s;
+ }
+
+#slide-real-life:checked ~ * .slider-circle-real-life {
+  border: 0.1vw solid #7faae8;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#slide-real-life:checked ~ * .slider-circle-real-life:hover {
+  border: 0.1vw solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#slide-step:checked + .step-block {
+  height: 100%;
+  opacity: 1;
+  z-index: 100;
+  transition: .4s;
+ }
+
+ #slide-step:checked ~ * .slider-text-step {
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: .85s;
+ }
+
+#slide-step:checked ~ * .slider-circle-step {
+  border: 0.1vw solid #7faae8;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#slide-step:checked ~ * .slider-circle-step:hover {
+  border: 0.1vw solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#slide-users:checked + .users-block {
+  height: 100%;
+  opacity: 1;
+  z-index: 100;
+  transition: .4s;
+ }
+
+ #slide-users:checked ~ * .slider-text-users {
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: .85s;
+ }
+
+#slide-users:checked ~ * .slider-circle-users {
+  border: 0.1vw solid #7faae8;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#slide-users:checked ~ * .slider-circle-users:hover {
+  border: 0.1vw solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+}
