@@ -117,6 +117,13 @@ body {
   gap: 0.7vw;
  }
 
+ .slider-circle label{
+  cursor: pointer;
+  padding: 0.45vw;
+ }
+
+ 
+
  .slider-circle-bug, .slider-circle-real-life, .slider-circle-step, .slider-circle-users {
   width: 1vw;
   height: 1vw;
@@ -126,14 +133,25 @@ body {
   transition: 0.4s;
  }
 
-span {
-  display: inline-block;
-  width: 2vw;
-  height: 2vw;
+ .label-wrapper-circle-bug:hover .slider-circle-bug{
+  background-color: #ffffff;
  }
 
- .slider-circle-bug:hover, .slider-circle-real-life:hover, .slider-circle-step:hover, .slider-circle-users:hover {
-  background-color: #ffffff;;
+ .label-wrapper-circle-real-life:hover .slider-circle-real-life {
+  background-color: #ffffff;
+ }
+
+ .label-wrapper-circle-step:hover .slider-circle-step {
+  background-color: #ffffff;
+ }
+
+ .label-wrapper-circle-users:hover .slider-circle-users {
+  background-color: #ffffff;
+ }
+
+
+.slider-circle-bug:hover, .slider-circle-real-life:hover, .slider-circle-step:hover, .slider-circle-users:hover {
+  background-color: #ffffff;
  }
 
  .controls {
@@ -209,7 +227,7 @@ span {
   background-color: #25282a;
 }
 
-.slide-bug-input:checked ~ * .slider-circle-bug:hover {
+.slide-bug-input:checked ~ * .label-wrapper-circle-bug:hover .slider-circle-bug{
   border: 0.1vw solid #ffffff;
   border-radius: 50%;
   background-color: #25282a;
@@ -235,7 +253,7 @@ span {
   background-color: transparent;
 }
 
-#slide-real-life:checked ~ * .slider-circle-real-life:hover {
+#slide-real-life:checked ~ * .label-wrapper-circle-real-life:hover .slider-circle-real-life{
   border: 0.1vw solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
@@ -261,7 +279,7 @@ span {
   background-color: transparent;
 }
 
-#slide-step:checked ~ * .slider-circle-step:hover {
+#slide-step:checked ~ * .label-wrapper-circle-step:hover .slider-circle-step{
   border: 0.1vw solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
@@ -287,7 +305,7 @@ span {
   background-color: transparent;
 }
 
-#slide-users:checked ~ * .slider-circle-users:hover {
+#slide-users:checked ~ * .label-wrapper-circle-users:hover .slider-circle-users{
   border: 0.1vw solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
