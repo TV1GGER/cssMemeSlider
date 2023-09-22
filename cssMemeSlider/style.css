@@ -233,6 +233,10 @@ body {
   background-color: #25282a;
 }
 
+.slide-bug-input:active ~ * .slider-circle-bug {
+  transform: scale(2);
+}
+
 #slide-real-life:checked + .real-life-block {
   height: 100%;
   opacity: 1;
@@ -257,6 +261,10 @@ body {
   border: 0.1vw solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
+}
+
+#slide-real-life:active ~ * .slider-circle-real-life {
+  transform: scale(2);
 }
 
 #slide-step:checked + .step-block {
@@ -285,6 +293,10 @@ body {
   background-color: transparent;
 }
 
+#slide-step:active ~ * .slider-circle-step {
+  transform: scale(2);
+}
+
 #slide-users:checked + .users-block {
   height: 100%;
   opacity: 1;
@@ -309,6 +321,10 @@ body {
   border: 0.1vw solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
+}
+
+#slide-users:active ~ * .slider-circle-users {
+  transform: scale(2);
 }
 
 @media screen and (max-width: 1020px) {
